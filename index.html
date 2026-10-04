@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crown Bakery — complimentary mockup</title>
+  <meta name="description" content="Review-only landing page mockup for Crown Bakery by Al-Falah Marketing. Not a live site." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: { colors: { ink:'#1c1917', accent:'#b45309', gold:'#c9a227', cream:'#f8fafc' }, fontFamily: { sans:['Inter','system-ui','sans-serif'] } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, sans-serif; }
+    .lang-fr { display: none; }
+    html[data-lang="fr"] .lang-en { display: none; }
+    html[data-lang="fr"] .lang-fr { display: revert; }
+  </style>
+</head>
+<body class="bg-cream text-slate-800 pb-24">
+  <div class="bg-amber-50 text-amber-950 text-center text-sm px-4 py-2 border-b border-amber-200">
+    <span class="lang-en">Complimentary mockup by Al-Falah Marketing — nothing is live under your name.</span>
+    <span class="lang-fr">Maquette offerte par Al-Falah Marketing — rien n’est en ligne sous votre nom.</span>
+  </div>
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
+      <a href="#top" class="font-extrabold tracking-tight text-ink text-lg">Crown Bakery</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#menu" class="hover:text-ink"><span class="lang-en">Menu</span><span class="lang-fr">Carte</span></a>
+        <a href="#gallery" class="hover:text-ink"><span class="lang-en">Gallery</span><span class="lang-fr">Galerie</span></a>
+        <a href="#visit" class="hover:text-ink"><span class="lang-en">Visit</span><span class="lang-fr">Venir</span></a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="langBtn" class="text-xs font-semibold border border-slate-300 rounded-full px-3 py-1" type="button">FR</button>
+        <a href="https://wa.me/23230160081" class="hidden sm:inline-flex bg-accent text-white text-sm font-semibold rounded-full px-4 py-2">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="top" class="relative min-h-[78vh] flex items-end">
+    <img src="assets/hero.jpg" alt="Crown Bakery" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/25"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-16 text-white">
+      <p class="uppercase tracking-[0.2em] text-xs text-amber-200 mb-3">Wilberforce Street · Freetown<span class="lang-fr"></span></p>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight max-w-3xl">Bakery, breakfast, and lunch in the centre of Freetown.<span class="lang-fr"></span></h1>
+      <p class="mt-4 max-w-xl text-lg text-slate-100">Crown Bakery on 5 Wilberforce Street. Pastries, coffee, wraps, and a daily special — order or ask today’s menu on WhatsApp.<span class="lang-fr"></span></p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="https://wa.me/23230160081" class="bg-accent hover:opacity-90 text-white font-semibold rounded-full px-6 py-3">WhatsApp</a>
+        <a href="tel:+23230160081" class="bg-white/10 border border-white/30 text-white font-semibold rounded-full px-6 py-3"><span class="lang-en">Call</span><span class="lang-fr">Appeler</span> +232 30 160 081</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 grid md:grid-cols-3 gap-3 text-sm">
+      <p><span class="text-amber-200 font-semibold">Laurel, MD</span> · 8468 Winding Trail · +1 240 280 6137</p>
+      <p><span class="text-amber-200 font-semibold">Coyah, Guinée</span> · Orange Money / GNF · +224 611 351 302</p>
+      <p><span class="text-amber-200 font-semibold">Freetown</span> · SLE · Al-Falah Marketing</p>
+    </div>
+  </section>
+
+  <section id="menu" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-extrabold text-ink"><span class="lang-en">From the counter</span><span class="lang-fr">Au comptoir</span></h2>
+    <p class="mt-2 text-slate-600 max-w-2xl"><span class="lang-en">Sample cards for the mockup. Today’s prices stay on WhatsApp until you confirm them.</span><span class="lang-fr">Cartes d’exemple pour la maquette. Les prix du jour restent sur WhatsApp jusqu’à votre confirmation.</span></p>
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <button type="button" data-modal data-title="Fresh pastries" data-body="Sample card. Crown confirms flavors and prices." class="text-left bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition">
+          <img src="assets/pastry.jpg" alt="" class="h-44 w-full object-cover" />
+          <div class="p-4"><p class="font-bold text-ink">Fresh pastries</p><p class="text-sm text-slate-600 mt-1">Cakes and morning bakes for the office run.</p><p class="text-sm font-semibold text-accent mt-2">Ask today’s price</p></div>
+        </button>
+<button type="button" data-modal data-title="Breakfast plates" data-body="Sample. Replace with Crown’s real breakfast menu." class="text-left bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition">
+          <img src="assets/breakfast.jpg" alt="" class="h-44 w-full object-cover" />
+          <div class="p-4"><p class="font-bold text-ink">Breakfast plates</p><p class="text-sm text-slate-600 mt-1">Eggs and a full breakfast plate, downtown.</p><p class="text-sm font-semibold text-accent mt-2">Ask today’s price</p></div>
+        </button>
+<button type="button" data-modal data-title="Wraps & lunch" data-body="Guests mention wraps and fried chicken. Confirm the live menu." class="text-left bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition">
+          <img src="assets/wrap.jpg" alt="" class="h-44 w-full object-cover" />
+          <div class="p-4"><p class="font-bold text-ink">Wraps & lunch</p><p class="text-sm text-slate-600 mt-1">Chicken wraps and daily specials for a quick lunch.</p><p class="text-sm font-semibold text-accent mt-2">Ask today’s price</p></div>
+        </button>
+    </div>
+  </section>
+
+  <section id="gallery" class="bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-extrabold text-ink"><span class="lang-en">Gallery</span><span class="lang-fr">Galerie</span></h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <img src="assets/pastry.jpg" alt="" class="h-40 w-full object-cover rounded-2xl" />
+<img src="assets/coffee.jpg" alt="" class="h-40 w-full object-cover rounded-2xl" />
+<img src="assets/counter.jpg" alt="" class="h-40 w-full object-cover rounded-2xl" />
+<img src="assets/breakfast.jpg" alt="" class="h-40 w-full object-cover rounded-2xl" />
+      </div>
+      <p class="mt-4 text-xs text-slate-500"><span class="lang-en">Placeholder photos chosen to match the trade. Replace with your own storefront, plates, and team shots.</span><span class="lang-fr">Photos d’ambiance choisies pour le métier. À remplacer par vos photos de salle, plats et équipe.</span></p>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-extrabold text-ink"><span class="lang-en">What a simple page can do</span><span class="lang-fr">Ce qu’une page simple peut faire</span></h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-4">
+      <article class="rounded-2xl bg-white p-6 shadow-sm border border-slate-100"><p class="text-3xl font-extrabold text-accent">Acile Coffee</p><p class="mt-2 text-sm text-slate-600"><span class="lang-en">A clear menu and WhatsApp button helped regulars reorder without hunting through social posts.</span><span class="lang-fr">Une carte claire et un bouton WhatsApp aident les habitués à recommander sans chercher dans les publications.</span></p></article>
+      <article class="rounded-2xl bg-white p-6 shadow-sm border border-slate-100"><p class="text-3xl font-extrabold text-accent">Shawarma Sam</p><p class="mt-2 text-sm text-slate-600"><span class="lang-en">One page with hours, location, and call-to-order outperformed a Facebook-only listing after hours.</span><span class="lang-fr">Une page avec horaires, adresse et commande a mieux servi qu’une fiche Facebook seule après la fermeture des bureaux.</span></p></article>
+      <article class="rounded-2xl bg-white p-6 shadow-sm border border-slate-100"><p class="text-3xl font-extrabold text-accent">0</p><p class="mt-2 text-sm text-slate-600"><span class="lang-en">Obligation. This mockup is a preview. Hosting only starts if you ask.</span><span class="lang-fr">Obligation. Cette maquette est un aperçu. L’hébergement ne commence que si vous le demandez.</span></p></article>
+    </div>
+  </section>
+
+  <section id="visit" class="bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-extrabold"><span class="lang-en">Visit & order</span><span class="lang-fr">Venir & commander</span></h2>
+        <p class="mt-4 text-slate-200">5 Wilberforce Street, Freetown, Sierra Leone</p>
+        <p class="mt-2">+232 30 160 081</p>
+        <p class="mt-2 text-sm text-slate-300">Directory hours: Mon–Fri about 8:45–16:30, Sat 9:00–15:30. Confirm before you visit.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="https://wa.me/23230160081" class="bg-accent rounded-full px-5 py-3 font-semibold">WhatsApp</a>
+          <a href="tel:+23230160081" class="border border-white/30 rounded-full px-5 py-3 font-semibold"><span class="lang-en">Call</span><span class="lang-fr">Appeler</span></a>
+        </div>
+      </div>
+      <form id="lead" class="bg-white text-slate-800 rounded-2xl p-6 shadow-xl">
+        <h3 class="font-bold text-lg"><span class="lang-en">Ask for today’s menu</span><span class="lang-fr">Demander la carte du jour</span></h3>
+        <label class="block text-sm mt-4"><span class="lang-en">Name</span><span class="lang-fr">Nom</span>
+          <input id="nm" class="mt-1 w-full border rounded-xl px-3 py-2" />
+        </label>
+        <label class="block text-sm mt-3"><span class="lang-en">Request</span><span class="lang-fr">Demande</span>
+          <textarea id="rq" class="mt-1 w-full border rounded-xl px-3 py-2" rows="3"></textarea>
+        </label>
+        <button type="submit" class="mt-4 w-full bg-accent text-white font-semibold rounded-xl py-3"><span class="lang-en">Open WhatsApp</span><span class="lang-fr">Ouvrir WhatsApp</span></button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-slate-950 text-slate-300 text-sm">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
+      <div>
+        <p class="text-white font-semibold">Crown Bakery</p>
+        <p class="mt-2">5 Wilberforce Street, Freetown, Sierra Leone</p>
+      </div>
+      <div>
+        <p class="text-white font-semibold">Al-Falah Marketing</p>
+        <p class="mt-2">8468 Winding Trail, Laurel, MD 20724</p>
+        <p>+1 240 280 6137 · +224 611 351 302</p>
+        <p>info@al-falahmarketing.com</p>
+      </div>
+      <div>
+        <p><a class="underline" href="https://al-falahmarketing.com">al-falahmarketing.com</a></p>
+        <p class="mt-2">Privacy · Terms — review mockup only.</p>
+        <p class="mt-2 text-xs">Site credit: complimentary mockup by Al-Falah Marketing, founded 2023. Not a live client website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-white border-t border-slate-200 grid grid-cols-3">
+    <a href="tel:+23230160081" class="text-center py-3 text-sm font-semibold text-ink"><span class="lang-en">Call</span><span class="lang-fr">Appeler</span></a>
+    <a href="https://wa.me/23230160081" class="text-center py-3 text-sm font-semibold text-white bg-accent">WhatsApp</a>
+    <a href="#menu" class="text-center py-3 text-sm font-semibold text-ink"><span class="lang-en">Menu</span><span class="lang-fr">Carte</span></a>
+  </div>
+
+  <div id="modal" class="hidden fixed inset-0 z-50 bg-black/60 items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6">
+      <h3 id="modalTitle" class="text-xl font-bold"></h3>
+      <p id="modalBody" class="mt-2 text-slate-600"></p>
+      <button id="modalClose" class="mt-4 bg-ink text-white rounded-full px-4 py-2" type="button">OK</button>
+    </div>
+  </div>
+  <script>
+    const root = document.documentElement;
+    const btn = document.getElementById('langBtn');
+    function setLang(l) { root.dataset.lang = l; btn.textContent = l === 'en' ? 'FR' : 'EN'; }
+    setLang('en');
+    btn.addEventListener('click', () => setLang(root.dataset.lang === 'en' ? 'fr' : 'en'));
+    document.querySelectorAll('[data-modal]').forEach(el => el.addEventListener('click', () => {
+      document.getElementById('modalTitle').textContent = el.dataset.title;
+      document.getElementById('modalBody').textContent = el.dataset.body;
+      const m = document.getElementById('modal');
+      m.classList.remove('hidden'); m.classList.add('flex');
+    }));
+    document.getElementById('modalClose').onclick = () => {
+      const m = document.getElementById('modal'); m.classList.add('hidden'); m.classList.remove('flex');
+    };
+    document.getElementById('lead').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const text = encodeURIComponent('Bonjour / Hello Crown Bakery. ' + document.getElementById('nm').value + ' — ' + document.getElementById('rq').value);
+      window.location.href = 'https://wa.me/23230160081?text=' + text;
+    });
+  </script>
+</body>
+</html>
